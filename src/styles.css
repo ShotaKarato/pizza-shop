@@ -1,0 +1,62 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading {
+  text-align: center;
+}
+.menus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  padding: 1em;
+  list-style: none;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 3px 16px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.menu.inCart {
+  background-color: #b2ffd6;
+}
+.menu__info {
+  margin: 0;
+}
+.menu__name {
+  margin: 0 0 8px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+.menu__desc {
+  margin: 0 0 16px;
+}
+.menu__price {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+.btn {
+  padding: 0.6em 1em;
+  border: none;
+  background-color: #b3dbef;
+  border-radius: 100px;
+}
+.btn:disabled {
+  padding: 0.6em 1em;
+  color: #fff;
+  border: none;
+  background-color: #cecece;
+  border-radius: 100px;
+}
+.order-container {
+  display: flex;
+}
+.orders {
+  width: 70%;
+}
